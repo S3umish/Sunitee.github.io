@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "The Best Way to Eat an Elephant "
+title:      " The Best Way to Eat an Elephant "
 date:       2020-10-22 15:06:44 -0400
 permalink:  the_best_way_to_eat_an_elephant
 ---
@@ -27,4 +27,4 @@ Countrylist is a learning resource , I would like to add more features to it by 
 
 It was a great learning experience. A big shout out to my cohort lead “Madeline Stark” for the guidance and support needed to complete this assignment.
 
-Thank you . Here's the link to a short demo of the project :  https://youtu.be/SjiGQr7GgPw
+Thank you . Here's the link to a short demo of the project :  [CountryList](https://youtu.be/SjiGQr7GgPw)
