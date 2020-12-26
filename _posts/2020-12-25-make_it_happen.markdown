@@ -1,15 +1,16 @@
 ---
 layout: post
 title:      "Make It Happen !!"
-date:       2020-12-26 02:46:05 +0000
+date:       2020-12-25 21:46:06 -0500
 permalink:  make_it_happen
 ---
 
 
 
 
-**You need to make it happen!: You need to ensure that it happens, you need to do everything you can to facilitate it !
-**
+"You need to make it happen!: You need to ensure that it happens, you need to do everything you can to facilitate it !"
+
+
 “If you can see it clearly in your head, you can make it happen.”
 
 I decided to develop **MakeItHappen**, the Sinatra MVC web app. Its a self management system , where the user can create, read, edit- update and delete their missions . Its a repository of all the missions and  it gives a list and detailed view of the missions created by its user.
@@ -20,7 +21,7 @@ This was definitely under different light , with better understanding of concept
 
 Next was “errors” and how to handle them , I do remember many anxious moments and then referring back to the lessons and class instruction videos to reach the ...aha moment !!.
 
-The password digest and has_secured_password, validation and authorization was an interesting one too. The way sessions hash stores the user information and the checks and balances in place to ensure how each request is handled at the back_end was greatly explained.
+The password digest and has_secure_password, validation and authorization was an interesting one too. The way sessions hash stores the user information and the checks and balances in place to ensure how each request is handled at the back_end was greatly explained.
 
 Overall the Sinatra module is a definitely a learning curve and I am excited to see what RAILS have to offer .
 
