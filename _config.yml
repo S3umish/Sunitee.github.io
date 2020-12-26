@@ -1,11 +1,11 @@
 # Site settings
 author: Sunitee
-title: The Best Way to Eat an Elephant
+title: MakeItHappen
 header-img: img/home-bg.png
 email: sunitee.mishra@gmail.com
 copyright_name: Sunitee
 description: > # this means to ignore newlines until "baseurl:"
-  CLI Project - CountryList
+  Sinatra MVC Project - Mission Tracker
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  S3umish
