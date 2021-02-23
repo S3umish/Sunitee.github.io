@@ -8,7 +8,7 @@ permalink:  the_super_power_of_dots
 
 
 
-You must have seen dots , also known as "bindi" on forheads , it means I am **focused** , I am **committed** and I have a **purpose**.
+You must have seen dots , also known as "bindi" on forheads , it means I am **focussed** , I am **committed** and I have a **purpose**.
 
 
 
