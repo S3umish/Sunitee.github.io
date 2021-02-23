@@ -1,10 +1,9 @@
 ---
 layout: post
-title:      "The Super Power of "." Dots !!"
+title:      "The Super Power of . Dots !!"
 date:       2021-02-23 12:27:40 -0500
 permalink:  the_super_power_of_dots
 ---
-
 
 
 
@@ -78,7 +77,7 @@ Use Ctrl-C to stop
 ```
 
 
-Like "Dots " I am highly impressed with "Self " in Ruby. 
+Like " Dots " I am highly impressed with "Self " in Ruby. 
 
 I am hopeful that in the next mod, I will find more interesting connections with the real world !! Thanks for reading .
 
