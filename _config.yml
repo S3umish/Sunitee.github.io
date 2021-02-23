@@ -1,11 +1,11 @@
 # Site settings
 author: Sunitee
-title: MakeItHappen
+title: The Super Power of "." Dots !!
 header-img: img/home-bg.png
 email: sunitee.mishra@gmail.com
 copyright_name: Sunitee
 description: > # this means to ignore newlines until "baseurl:"
-  Sinatra MVC Project - Mission Tracker
+  Mighty Dots..
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  S3umish
