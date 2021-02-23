@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "The Super Power of "."  Dots !!"
-date:       2021-02-23 17:27:39 +0000
+date:       2021-02-23 12:27:40 -0500
 permalink:  the_super_power_of_dots
 ---
 
