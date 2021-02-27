@@ -18,7 +18,7 @@ In my project, Music Enrollments App,  when the User clicks  button "Add New Enr
 
 * Once it finds the correct route,**/enrollments/new** it maps to the appropriate method in the controller action and calls on that , **enrollments#new**  and method **def new**
 
-* From there, it finds the associated view page(index, edit, show , and new) with that method to display the results to the user. **app/models/enrollment.rb /new.html.erb**  displays the **Add New Enrollment Form** to the user.
+* From there, it finds the associated view page(index, edit, show , and new) with that method to display the results to the user. **app/views/enrollments /new.html.erb**  displays the **Add New Enrollment Form** to the user.
 
 
 The controller action will render a template with the same name as the action itself. In other words, you only need to call render explicitly when the view template you want doesn’t match the action you’re rendering it from. In my application , I chose to rely on Rails magic to render the view **enrollments / new.html.erb**  instead of calling it explicitly **render  :new**
