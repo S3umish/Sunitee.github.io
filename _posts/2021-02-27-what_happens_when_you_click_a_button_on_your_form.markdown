@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "What happens when you click a button on your form:"
-date:       2021-02-27 16:30:55 +0000
+date:       2021-02-27 11:30:55 -0500
 permalink:  what_happens_when_you_click_a_button_on_your_form
 ---
 
@@ -45,15 +45,12 @@ def new
 To find the routes Run rails routes or go to localhost:3000/rails/info/routes to see all routes your application is configured to.
 
 
-Rails tries to map each controller action directly to a template. However, with actions like create, we don't want a view template –– all we want is for the action to communicate with the database and then redirect to a different page.
+In summary, Rails tries to map each controller action directly to a template. However, with actions like create, we don't want a view template –– all we want is for the action to communicate with the database and then redirect to a different page.
 
-The new action in the controller simply renders the new form
-
-The create action is what actually handles the process of inserting the form data into the database
-
-The edit action will handle rendering the edit form
-
-The update action will be the method that updates the database record itself.
+* The new action in the controller simply renders the new form
+* The create action is what actually handles the process of inserting the form data into the database
+* The edit action will handle rendering the edit form
+* The update action will be the method that updates the database record itself.
 
 
 
