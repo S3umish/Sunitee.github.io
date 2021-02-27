@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "What triggers model validations in Rails"
-date:       2021-02-27 16:29:55 +0000
+date:       2021-02-27 11:29:56 -0500
 permalink:  what_triggers_model_validations_in_rails
 ---
 
@@ -25,9 +25,11 @@ The bang versions (e.g. save!) raise an exception if the record is invalid. The 
 
 In my Music Enrollments App, I have used model level validation by calling **.valid?**  and **.save** in the create method written in app/enrollments_controller.rb , this triggers validations written in app/ models/ enrollment.rb. 
 
-When user clicks  button "Create Enrollment" , the browser sends a **Post** request to the server , rails follows the **enrollments_path** and finds the associated view **enrollments#create** and creates the **Record** in the database and user sees the message :"Success Enrollment Added".
+When user clicks  button "Create Enrollment" , the browser sends a **Post** request to the server , rails follows the **enrollments_path** and finds the matching controller action  **enrollments#create** , and method **def create** . 
 
-In case the required parameters are not filled in properly, the model validation gets triggered and User gets to see the errors , and then takes appropriate actions to create the record.
+The user gets to insert the information in the database and clicks button"Create Enrollment", if it gets inserted(saved) in the database, the user sees the message :"Success Enrollment Added".
+
+In case the required parameters are not filled in properly, the model validation gets triggered and User sees the errors messages ,the, implicit **render :new** will display the form to take the necessary actions to create the record.
 
 ```
 class Enrollment < ApplicationRecord
