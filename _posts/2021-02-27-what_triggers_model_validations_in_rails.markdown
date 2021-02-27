@@ -29,7 +29,7 @@ When user clicks  button "Create Enrollment" , the browser sends a **Post** requ
 
 The user gets to insert the information in the database and clicks button"Create Enrollment", if it gets inserted(saved) in the database, the user sees the message :"Success Enrollment Added".
 
-In case the required parameters are not filled in properly, the model validation gets triggered and User sees the errors messages ,the, implicit **render :new** will display the form to take the necessary actions to create the record.
+In case the required parameters are not filled in properly, the model validation gets triggered and User sees the errors messages ,the, explicit **render :new** will display the form to take the necessary actions to create the record.
 
 ```
 class Enrollment < ApplicationRecord
