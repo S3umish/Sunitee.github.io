@@ -8,15 +8,18 @@ permalink:  what_happens_when_you_click_a_button_on_your_form
 
 Here is what happens when you click a button on your form :
 
-* First, the browser sends a request to the server.
 
-* Then, Rails, gets the request and follows what method was listed (get, delete, post, etc) and tries to match it with the appropriate **route**
+In my project, Music Enrollments App,  when the User clicks  button "Add New Enrollment" 
 
-* Once it finds the correct route, it maps to the appropriate method in your controller and calls on that.
 
-* From there, it finds the associated view page(index, edit, show , and new) with that method to display the results to the user.
+* First, the browser sends a **GET**request to the server.,http://127.0.0.1:3000/enrollments/new
 
-In my project, Music Enrollments App,  when the User clicks  button "Add New Enrollment" , the browser sends a **Get** request to the server , rails follows the **new_enrollment_path** and finds the associated view **enrollments#new** and displays the **Add New Enrollment Form** to the user.
+* Then, Rails, gets the request and follows what method was listed (get, delete, post, etc) and tries to match it with the appropriate  path helper **new_enrollment_path**  
+
+* Once it finds the correct route,**/enrollments/new** it maps to the appropriate method in the controller action and calls on that , **enrollments#new**  and method **def new**
+
+* From there, it finds the associated view page(index, edit, show , and new) with that method to display the results to the user. **app/models/enrollment.rb /new.html.erb**  displays the **Add New Enrollment Form** to the user.
+
 
 The controller action will render a template with the same name as the action itself. In other words, you only need to call render explicitly when the view template you want doesn’t match the action you’re rendering it from. In my application , I chose to rely on Rails magic to render the view **enrollments / new.html.erb**  instead of calling it explicitly **render  :new**
 
