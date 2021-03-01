@@ -14,7 +14,7 @@ In my project, Music Enrollments App,  when the User clicks  button "Add New Enr
 
 * First, the browser sends a **GET**request to the server.,http://127.0.0.1:3000/enrollments/new
 
-* Then, Rails, gets the request and follows what method was listed (get, delete, post, etc) and tries to match it with the appropriate  path helper **new_enrollment_path**  
+* Then, Rails, gets the request and follows what method was listed (get, delete, post, etc) and tries to match it with the appropriate  route.
 
 * Once it finds the correct route,**/enrollments/new** it maps to the appropriate method in the controller action and calls on that , **enrollments#new**  and method **def new**
 
