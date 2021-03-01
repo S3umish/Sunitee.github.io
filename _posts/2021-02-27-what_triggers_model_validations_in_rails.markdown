@@ -25,11 +25,13 @@ The bang versions (e.g. save!) raise an exception if the record is invalid. The 
 
 In my Music Enrollments App, I have used model level validation by calling **.valid?**  and **.save** in the create method written in app/enrollments_controller.rb , this triggers validations written in app/ models/ enrollment.rb. 
 
-When user clicks  button "Create Enrollment" , the browser sends a **Post** request to the server , rails follows the **enrollments_path** and finds the matching controller action  **enrollments#create** , and method **def create** . 
+When user clicks  button "Create Enrollment" , the browser sends a **Post** request to the server , rails follows the route **/enrollments** and finds the matching controller action  **enrollments#create** , and method **def create** . 
 
 The user gets to insert the information in the database and clicks button"Create Enrollment", if it gets inserted(saved) in the database, the user sees the message :"Success Enrollment Added".
 
 In case the required parameters are not filled in properly, the model validation gets triggered and User sees the errors messages ,the, explicit **render :new** will display the form to take the necessary actions to create the record.
+
+app/models/enrollment.rb
 
 ```
 class Enrollment < ApplicationRecord
@@ -60,5 +62,20 @@ def create
   end
 ```
 
+See the below snippet, **"Enrollment.errors.full_messages"**, shows the validations required to save  **new enrollment** in the database.
 
+```
+2.6.1 :032 > Enrollment
+ => Enrollment(id: integer, startdate: datetime, student: string, level: string, duration: integer, price: integer, user_id: integer, instrument_id: integer, created_at: datetime, updated_at: datetime) 
+2.6.1 :033 > Enrollment.new(student:"Jack Welch")
+ => #<Enrollment id: nil, startdate: nil, student: "Jack Welch", level: nil, duration: nil, price: nil, user_id: nil, instrument_id: nil, created_at: nil, updated_at: nil> 
+2.6.1 :034 > e=_
+ => #<Enrollment id: nil, startdate: nil, student: "Jack Welch", level: nil, duration: nil, price: nil, user_id: nil, instrument_id: nil, created_at: nil, updated_at: nil> 
+2.6.1 :035 > e.valid?
+  Enrollment Exists? (0.4ms)  SELECT 1 AS one FROM "enrollments" WHERE "enrollments"."student" = ? LIMIT ?  [["student", "Jack Welch"], ["LIMIT", 1]]
+ => false 
+2.6.1 :036 > e.errors.full_messages
+ => ["Instrument must exist", "User must exist", "Instrument can't be blank", "Level can't be blank", "Duration can't be blank", "Price should be $39, $49, $89 only !!"] 
+2.6.1 :037 > 
 
+```
