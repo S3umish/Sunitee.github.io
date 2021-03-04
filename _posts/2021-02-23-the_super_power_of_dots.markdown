@@ -19,7 +19,11 @@ In the Ruby world, I have learnt dots are equally powerful and widely used to fe
 
 In the below snippet , you will find the super powerfull dots in full action. 
 
+**Dot notation** is fantastic for readability, as we can just reference the bare key name (e.g., .username or .email ). Because of this simple syntax, it should be your go-to strategy for accessing the properties of an Object.
+
+
 See below, the omniauth method , the active record association like find_or_create is to find the user instance, u.username , u.email , u.password  and ultimate method  user.errors.full_messages.to_sentence in full glory.  
+
 
 In the "request.env[omniauth.auth]" , the key in the environment hash provides an Authentication Hash which will contain information about the just authenticated user including a unique id, the strategy they just used for authentication, and personal details such as name and email address as available. 
 
@@ -77,11 +81,17 @@ Use Ctrl-C to stop
 ```
 
 
-Like " Dots " I am highly impressed with "Self " in Ruby. 
+Like " dot notation " I am highly impressed with "self " in Ruby. 
 
-In case you are wondering what is Omniauth?? , **Omniauth** is a gem which provides an interface to your application to login through third party authentication system. It helps gain access to the user’s data from the provider in the Sessions Controller . Typically, if a matching User exists in your database, the client will be logged in to your application. If no match is found, a new User will be created using the data received from the provider.
-From User’s standpoint, the User tries to access a page on yoursite.com that requires them to be logged in. They are redirected to the login screen.The login screen offers the options of creating an account or logging in with third party authenticators called provider like Google ,Facebook, Gituhub etc .The user clicks, the button” Log in with Google”. This momentarily sends the user to yoursite.com/auth/google, which quickly redirects to the Google sign-in page. If the user is not already signed in to Google, they sign in normally. More likely, they are already signed in, so Google simply asks if it's okay to let yoursite.com access the user's information. The user agrees and are hopefully quickly redirected to yoursite.com/auth/google/callback and, from there , to the page they initially tried to access.
-
+In case you are wondering what is Omniauth?? , **Omniauth** is a gem which provides an interface to your application to login through third party authentication system. It helps gain access to the user’s data from the provider in the Sessions Controller .
+* Typically, if a matching User exists in your database, the client will be logged in to your application. If no match is found, a new User will be created using the data received from the provider.
+* From User’s standpoint, the User tries to access a page on yoursite.com that requires them to be logged in. 
+* They are redirected to the login screen.
+* The login screen offers the options of creating an account or logging in with third party authenticators called provider like Google ,Facebook, Gituhub etc .
+* The user clicks, the button” Log in with Google”. This momentarily sends the user to yoursite.com/auth/google, which quickly redirects to the Google sign-in page.
+* If the user is not already signed in to Google, they sign in normally. More likely, they are already signed in, so Google simply asks if it's okay to let yoursite.com access the user's information. 
+* The user agrees and are hopefully quickly redirected to yoursite.com/auth/google/callback and, from there , to the page they initially tried to access.
+* 
 
 I am hopeful that in the next mod, I will find more interesting connections with the real world !! Thanks for reading .
 
