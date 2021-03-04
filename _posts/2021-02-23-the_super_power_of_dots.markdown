@@ -91,7 +91,7 @@ In case you are wondering what is Omniauth?? , **Omniauth** is a gem which provi
 * The user clicks, the button” Log in with Google”. This momentarily sends the user to yoursite.com/auth/google, which quickly redirects to the Google sign-in page.
 * If the user is not already signed in to Google, they sign in normally. More likely, they are already signed in, so Google simply asks if it's okay to let yoursite.com access the user's information. 
 * The user agrees and are hopefully quickly redirected to yoursite.com/auth/google/callback and, from there , to the page they initially tried to access.
-* 
+
 
 I am hopeful that in the next mod, I will find more interesting connections with the real world !! Thanks for reading .
 
