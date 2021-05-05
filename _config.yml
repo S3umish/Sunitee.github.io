@@ -1,11 +1,11 @@
 # Site settings
 author: Sunitee
-title: The Super Power of "." Dots !!
+title: Learn Blogs
 header-img: img/home-bg.png
 email: sunitee.mishra@gmail.com
 copyright_name: Sunitee
 description: > # this means to ignore newlines until "baseurl:"
-  Mighty Dots..
+  Learning
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  S3umish
