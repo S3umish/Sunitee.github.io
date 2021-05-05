@@ -56,7 +56,7 @@ static formHandler() {
     }
 ```
 
-A **constructor** enables you to provide any custom initialization that must be done before any other methods can be called on an instantiated object. If you don't provide your own constructor, then a default constructor will be supplied for you.  Its used to initialize class properties when new instance is created.
+A **constructor** enables you to provide any custom initialization that must be done before any other methods can be called on an instantiated object. It is used to initialize class properties when new instance is created. The constructor method is a special method of a class for creating and initializing an object of that class.
 
 ```
 class Book {
