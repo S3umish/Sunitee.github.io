@@ -8,7 +8,7 @@ permalink:  thinking_in_react
 
 "One of the many great parts of React is how it makes you think about apps as you build them. " 
 
-**What is React ??**, its a  frontend framework which allows the web developers to create and design new applications. It is built entirely out of JavaScript with a combination of dependencies. The best part of React is that it provides a specific way to organize and structure the design of a web application. React framework is maintained by Facebook. React Native is used for development of mobile apps. 
+**What is React ??**, is a  frontend framework which allows the web developers to create and design new applications. It is built entirely out of JavaScript with a combination of dependencies. The best part of React is that it provides a specific way to organize and structure the design of a web application. React framework is maintained by Facebook. React Native is used for development of mobile apps. 
 
  NPM **Node Package Manager** is the set of files or a package containing reusable code, is installed to load React.
  
@@ -38,7 +38,7 @@ Here's the snippet of  folder App.js  , which is nested under src folder of the 
 
 
 ```
-// src > App.js
+// ClassicCars > src > App.js
 
 import React,{ Component } from 'react';
 import { connect } from 'react-redux';
