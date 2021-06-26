@@ -8,7 +8,7 @@ permalink:  thinking_in_react
 
 "One of the many great parts of React is how it makes you think about apps as you build them. " 
 
-**What is React ??**, is a  frontend framework which allows the web developers to create and design new applications. It is built entirely out of JavaScript with a combination of dependencies. The best part of React is that it provides a specific way to organize and structure the design of a web application. React framework is maintained by Facebook. React Native is used for development of mobile apps. 
+**What is React ??**, it  is a  frontend framework which allows the web developers to create and design new applications. It is built entirely out of JavaScript with a combination of dependencies. The best part of React is that it provides a specific way to organize and structure the design of a web application. React framework is maintained by Facebook. React Native is used for development of mobile apps. 
 
  NPM **Node Package Manager** is the set of files or a package containing reusable code, is installed to load React.
  
@@ -34,7 +34,7 @@ permalink:  thinking_in_react
 
 **App.js** is the topmost level called the parent component of our react app. It includes all dependencies, imports and exports, Provider, Dom, Reducers, Store and Developmental Tools.
 
-Here's the snippet of  folder App.js  , which is nested under src folder of the app.
+Here's the snippet of  App.js  , which is nested under src folder of the app.
 
 
 ```
@@ -98,7 +98,7 @@ export default connect()(App);
 
 
 
-Hope this information will help newbies to "React module" get excited for the latest in the apps development.
+Hope this information will help newbies to "React module" get excited for the latest in the app development.
 
 Happy Coding !!
 
